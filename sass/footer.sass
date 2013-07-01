@@ -1,0 +1,36 @@
+@import 'compass'
+@import 'colors'
+
+footer
+	width: 100%
+	background: url('../imgs/layout/footer-gradient.jpg') repeat-x
+	+background-image(linear-gradient($header-bottom, $header-top))
+	color: $white
+	position: absolute
+	left: 0
+	bottom: 0
+	height: 200px
+	ul
+		padding: 0
+		margin: 0 10px 0 0
+		li
+			display: inline
+			padding: 0 10px
+			border-left: 1px solid $white
+			&:first-of-type
+				border: none
+				padding-left: 0
+	a
+		color: $white
+		text-decoration: none
+		&:hover
+			text-decoration: underline
+			color: $white
+	p
+		margin: 25px 0 0 0
+	.grid
+		margin: 0
+	.module
+		background: none
+	[class*='col-']
+		padding: 0

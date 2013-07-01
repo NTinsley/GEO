@@ -1,0 +1,95 @@
+@import 'compass'
+@import 'colors'
+@import 'http://fonts.googleapis.com/css?family=Lato:300,400,900'
+
+body
+	line-height: 22px
+	color: #333333
+	font-size: 14px
+	font-family: 'Lato', helvetica, sans-serif
+	h2, h3, h4,
+		color: $header-bottom
+	p, h2, h3, h4
+		margin: 10px 0
+	h3
+		border-bottom: 1px solid $super-lt-gray
+	h5
+		font-size: 14px
+a
+	text-decoration: none
+	color: $header-bottom
+	&:hover
+		text-decoration: underline
+		color: $header-top
+	&.btn
+		background: $header-top
+		float: left
+		color: $white
+		padding: 10px 20px
+		text-align: center
+		margin: 10px 0 
+		+border-radius((20px))
+		&:hover
+			background: $header-bottom
+			text-decoration: none
+	&.pdf
+		&:after
+			margin: 2px 0 0 5px
+			content: url('../imgs/layout/icon-pdf.gif')
+ul, ol
+	padding: 0 20px
+	margin: 10px 0
+blockquote
+	margin: 10px 0
+	border-left: 10px $brown solid
+	padding-left: 10px
+	font-style: italic
+	span
+		font-weight: bold
+		float: left
+		margin-top: 5px
+		font-size: 14px
+		font-style: normal
+table
+	border: 1px solid $super-lt-gray
+	width: 100%
+	border-collapse: collapse
+	margin: 10px 0
+	tr
+		border-bottom: 1px solid $super-lt-gray
+		&:nth-child(even)
+			background: $table-even-gray
+	td
+		padding: 6px 6px 6px 12px
+		min-width: 100px
+	th
+		font-weight: bold
+		padding: 8px 6px 8px 12px
+		border-bottom: 1px solid $super-lt-gray
+		border-right: 1px solid $super-lt-gray
+		text-align: left
+#content
+	h2, h3, h4, h5
+		margin: 20px 0
+#sidebar
+	ul
+		padding: 0 5px
+		li
+			list-style: square
+			a
+				color: $gray
+				text-decoration: none
+				&:hover
+					text-decoration: underline
+a.readmore
+	color: $lt-gray
+	text-decoration: none
+	float: right
+	padding: 10px 20px
+	background: url('../imgs/layout/external-arrow.png') no-repeat right center
+	font-size: 14px
+	&:hover
+		color: $header-top
+input
+	padding: 3px 5px
+	font-size: 12px

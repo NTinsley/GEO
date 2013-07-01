@@ -1,0 +1,161 @@
+@import 'compass'
+#identity
+	width: 100%
+	background: $white
+	height: 60px
+	h1
+		background: url('../imgs/layout/identity/vcubrand.gif') no-repeat
+		width: 804px
+		margin: 0
+		padding: 0
+		height: 60px
+		text-indent: -9999px
+		float: left
+	h2
+		background: url('../imgs/layout/identity/makeitreal.gif') no-repeat
+		width: 109px
+		margin: 20px 0 0 0
+		padding: 0
+		height: 31px
+		text-indent: -9999px
+		float: left
+#header
+	width: 100%
+	height: 133px
+	background: url('../imgs/layout/header-gradient.jpg') repeat-x
+	+background-image(linear-gradient($header-top, $header-bottom))
+	z-index: 4
+	.world
+		background: url('../imgs/layout/world.png') no-repeat
+		position: absolute
+		right: 0
+		top: 0
+		min-width: 324px
+		min-height: 133px
+		text-indent: -9999px
+	.world-move
+		right: 20px
+	h1
+		background: url('../imgs/layout/header-logo.png') no-repeat
+		width: 546px
+		height: 33px
+		text-indent: -9999px
+		margin: 0
+		position: absolute
+		top: 35px
+	ul
+		margin: 0 auto
+		padding: 0
+		position: absolute
+		top: 80px
+		font-size: 11px
+		text-transform: uppercase
+		color: $gray
+		li
+			display: inline
+			border-right: 1px solid $white
+			padding: 0 7px
+			&:last-of-type
+				border-right: none
+			a
+				color: $white
+				text-decoration: none
+				@include ease
+				&:hover
+					text-decoration: underline
+	form
+		position: absolute
+		right: 0
+		top: 30px
+		input
+			&.field
+				width: 120px 
+				height: 19px
+				color: $lt-gray
+				font-size: 12px
+				margin: 0
+				float: left
+				padding: 0
+			&#search_btn
+				padding: 0
+#navigation
+	margin-top: -25px
+	background: $white
+	border: 1px solid $lt-gray
+	height: 50px
+	font-size: 13px
+	z-index: 9999
+	width: 990px
+	+box-shadow((1px 3px 5px $gray))
+	text-transform: uppercase
+	a
+		float: right
+		background: $header-top
+		padding: 5px 10px
+		color: $white
+		text-decoration: none
+		font-weight: 100
+		margin: 0px 40px 0 0
+		+box-shadow((1px 3px 5px $gray))
+		z-index: 99
+		&:hover
+			background: $header-bottom
+	ul
+		padding: 0
+		margin: 0 auto
+		height: 50px
+		list-style: none
+		li	
+			float: left
+			line-height: 45px
+			height: 50px
+			&:nth-child(n+2)
+				&:after
+					position: absolute
+					top: 0
+					display: block
+					content: url('../imgs/layout/header-li-after-bar.png')
+					border-bottom: 1px solid $lt-gray
+			&:last-child ,&:nth-last-child(2)
+				background: url('../imgs/layout/nav-external-arrow.png') no-repeat top right
+			&:hover
+				+background-image(linear-gradient($white, $nav-bottom))
+				border-top: 1px solid $lt-gray
+				border-bottom: 1px solid $lt-gray
+				margin-top: -1px
+			a
+				display: inline-block
+				color: $lt-gray
+				padding: 1px 11px
+				text-decoration: none
+				box-shadow: none
+				background: none
+				margin: 0
+				z-index: 1
+				&:hover
+					background: none
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

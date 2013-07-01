@@ -1,0 +1,63 @@
+@import 'compass'
+@import 'colors'
+
+/*-- Intelliworks --*/
+#form-wrapper
+	width: 400px
+	margin: 0 auto
+	display: block
+	input[type=text]
+		width: 100%
+		padding: 8px
+		font-size: 12px
+		border: 1px solid $super-lt-gray
+		+border-radius((2px))
+		margin: 5px 0 10px 0
+	select
+		height: 40px
+		width: 100%
+		padding: 5px
+		border: 1px solid #BBB
+		height: 28px
+		line-height: 28px
+		margin: 5px 0 10px 0
+		&.multiple
+			width: 95%
+			height: 140px
+			margin: 0 0 5px 5px
+	textarea
+		border: 1px solid $super-lt-gray
+		+border-radius((2px))
+		height: 20px
+		margin: 5px 0 10px 0
+		padding: 5px
+		width: 100%
+		height: 150px
+.sub-btn
+	margin: 0
+button
+	background-color: #CCCCCC
+	color: white !important
+	width: 150px
+	padding: 10px
+	+border-radius((10px))
+	border: none !important
+	margin: 10px
+	&.submit
+		background: $green
+		&:hover 
+			background: $green2
+	&.cancel
+		background: #bdc3c7
+		&:hover 
+			background: #7f8c8d
+	&:hover
+		cursor: pointer
+		cursor: hand
+	&.cancel:hover
+.dynamic-form-required
+	color: #e74c3c
+label
+	display: block
+	clear: both
+	width: 650px

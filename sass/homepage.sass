@@ -1,0 +1,48 @@
+@import 'compass'
+@import 'colors'
+@import 'flexslider'
+
+#interactive
+	height: 465px
+	width: 100%
+	top: -58px !important
+	display: block
+	min-width: 950px
+	z-index: 2
+	position: relative
+	overflow: hidden
+	h3
+		border: none
+#announcements, #news, #calendar
+	font-size: 14px 
+	ul
+		padding: 0
+		li
+			list-style: none
+			padding: 10px 0
+			border-top: 1px solid #cccccc
+			margin: 0
+			position: relative
+			background: url('../imgs/layout/external-arrow.png') no-repeat center right
+			a
+				display: inline-block
+				margin: 0
+				color: #333333
+				text-decoration: none
+				width: 95%
+				&:hover
+					color: $header-bottom
+				span
+					color: $header-bottom
+					float: left
+.over3
+	border-top: 5px solid $lt-gray
+#home-content
+	z-index: 9
+	margin: -100px auto 0px
+	height: auto
+	.module
+		+box-shadow((1px 3px 5px $super-lt-gray))
+	img
+		padding: 5px
+		border: 1px $super-lt-gray solid
